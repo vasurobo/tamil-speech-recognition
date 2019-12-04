@@ -56,7 +56,15 @@ Check and configure your microphone volume for better accuracy, then speak on mi
 நன்றி  
 அப்துல் கலாம்  
 வணக்கம்  
-உன் பெயர் என்ன   
+உன் பெயர் என்ன 
+
+# The words may appear weird because terminal can't display tamil correctly.
+
+So, you can redirect the recognized words alone to a text file and check it wether it recognized the words you speak correctly. Run the below code redirect output to text files.
+
+pocketsphinx_continuous -hmm am/ta.cd_cont_3000 -lm lm/ta.lm.bin -dict lm/ta.dic -inmic yes 2>./unwanted-stuff.log | tee ./words.log
+
+Open "words.log" file to see the recognized words.
 
 @jarvisvasu
 @vasurobo
