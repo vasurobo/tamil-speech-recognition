@@ -1,2 +1,2 @@
-# tamil-speech-recognition
-Tamil Speech Recognizer (OFFLINE) - Pocketsphinx With Models
+# Tamil Speech Recognizer (CMU Sphinx-4 / Pocketsphinx)
+Tamil Speech Recognizer (OFFLINE) - With Acoustic (am) & Language Models (lm)
