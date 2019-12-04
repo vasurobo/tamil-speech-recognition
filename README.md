@@ -19,44 +19,44 @@ sudo apt-get install gcc automake autoconf libtool bison swig python-dev libpuls
 
 Then, lets install sphinxbase (Important for running pocketsphinx)
 
-git clone https://github.com/cmusphinx/sphinxbase.git
-cd sphinxbase/
-./autogen.sh
-make
-sudo make install
+git clone https://github.com/cmusphinx/sphinxbase.git  
+cd sphinxbase  
+./autogen.sh  
+make  
+sudo make install  
 
 
-Now, install pocketsphinx
+Now, install pocketsphinx  
 
-git clone https://github.com/cmusphinx/pocketsphinx.git
-cd pocketsphinx
-./autogen.sh 
-make
-sudo make install
+git clone https://github.com/cmusphinx/pocketsphinx.git  
+cd pocketsphinx  
+./autogen.sh   
+make  
+sudo make install  
 
-Next open ld.so.conf file
+Next open ld.so.conf file  
 
-sudo nano /etc/ld.so.conf
-# Note : add the /usr/local/lib directory at the end of file, then run the below command
-sudo ldconfig
+sudo nano /etc/ld.so.conf  
+# Note : add the /usr/local/lib directory at the end of file, then run the below command  
+sudo ldconfig  
 
 # Check wether pocketsphinx is installed correctly : Run.
 
-pocketsphinx_continuous
+pocketsphinx_continuous  
 
-Thats all.
+Thats all.  
 
-Now download Tamil Speech Recognizer from https://github.com/vasurobo/tamil-speech-recognition/ and run "./run.sh" file in terminal.
+Now download Tamil Speech Recognizer from https://github.com/vasurobo/tamil-speech-recognition/ and run "./run.sh" file in terminal.  
 
 
 Check and configure your microphone volume for better accuracy, then speak on microphone.
 
 # Example :
 
-நன்றி
-அப்துல் கலாம்
-வணக்கம்
-உன் பெயர் என்ன 
+நன்றி  
+அப்துல் கலாம்  
+வணக்கம்  
+உன் பெயர் என்ன   
 
 @jarvisvasu
 @vasurobo
